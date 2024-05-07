@@ -95,7 +95,7 @@ fun WeatherScreen(
                 modifier = Modifier
                     .fillMaxSize()
                     .padding(paddingValues),
-                color = MaterialTheme.colorScheme.inversePrimary
+                color = MaterialTheme.colorScheme.primary
             ) {
                 WeatherScreenContent(uiState = uiState, modifier = modifier, viewModel = viewModel)
             }
@@ -422,7 +422,7 @@ fun DefaultAppBar(onSearchClicked: () -> Unit) {
             )
         },
         colors = TopAppBarDefaults.topAppBarColors(
-            containerColor = MaterialTheme.colorScheme.primaryContainer,
+            containerColor = MaterialTheme.colorScheme.primary,
             titleContentColor = MaterialTheme.colorScheme.onBackground,
         ),
         actions = {
@@ -451,7 +451,7 @@ fun SearchAppBar(
         modifier = Modifier
             .fillMaxWidth()
             .height(64.dp),
-        color = MaterialTheme.colorScheme.primary,
+        color = MaterialTheme.colorScheme.primaryContainer,
     ) {
         TextField(
             modifier = Modifier.fillMaxWidth(),
