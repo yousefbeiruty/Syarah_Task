@@ -1,10 +1,7 @@
 # Weather
-[![Kotlin](https://img.shields.io/badge/kotlin-1.8.10-blue.svg?logo=kotlin)](http://kotlinlang.org)
-[![Gradle](https://img.shields.io/badge/Gradle-8-green?style=flat)](https://gradle.org)
-<a href="https://github.com/aishwarya-kamal"><img alt="License" src="https://img.shields.io/static/v1?label=GitHub&message=aishwarya-kamal&color=C51162"/></a><br>
-Weather is an Android app for Weather with Jetpack Compose. It uses [openweathermap API](https://openweathermap.org/api). It is single screen app which displays weather data for a city.
+Weather is an Android app for Weather with Jetpack Compose. 
+It uses openweathermap API. It is single screen app which displays weather data for a city. 
 There is a search function in the top app bar to search for any city and display its weather data.
-
 ## 📐✏️ Architecture
 The app is built with the Model-View-ViewModel (MVVM) architecture with Repository pattern which is used to separate the app's user interface, logic, and data.
 
@@ -15,7 +12,7 @@ The app is built with the Model-View-ViewModel (MVVM) architecture with Reposito
 
 To visualize the flow:
 
-- User opens the app and sees the main weather screen with weather details of the default city - Munich.
+- User opens the app and sees the main weather screen with weather details.
 - User types a city name into the search bar.
 - The app's ViewModel, through the Repository, makes a call to the OpenWeatherMap API.
 - The API returns the weather data for the requested city.
